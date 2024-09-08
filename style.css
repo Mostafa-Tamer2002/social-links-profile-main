@@ -1,0 +1,157 @@
+/* !Import */
+@font-face {
+    font-family:'InterR' ;
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family:'InterSB' ;
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family:'InterB' ;
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+/* !Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* !GLobal Content */
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+body{
+    font-size: 14px;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: var(--Grey-900);
+    line-height: 1.6;
+    text-align: center;
+
+    /*need to be checked */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+img{
+    max-width: 100%;
+}
+
+/* !Body Content */
+/* ?================Start Of Main================ */
+main{
+    background-color: var(--Grey-800);
+    width: 22%;
+    border-radius: 0.7em;
+    /* margin:2em auto; */
+    padding: 2.5em;
+}
+/*======Header Section/*====== */
+header img{
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+header h2{
+    color: var(--White);
+    font-family:'InterB' ;
+}
+header p:first-of-type{
+    color: var(--Green);
+    font-family:'InterSB' ;
+}
+header p:last-child{
+    color: white;
+    font-family:'InterR' ;
+    margin: 1.5em 0em;
+}
+
+/*======Social-Media-Section====== */
+/* Socail-Media Container */
+.social-media {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Media-Box */
+.social-media .box{
+    background-color:var(--Grey-700);   
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+.social-media .box span{
+    color: var(--White);
+    font-family:'InterB';
+}
+.social-media .box:hover{
+    color: var(--Grey-700);
+    background-color: var(--Green);
+}
+.social-media .box:hover span{
+    color: var(--Grey-700);
+}
+
+
+/* !Media Query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        width: 90%;
+        padding: 1.5em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    main{
+        width: 50%;
+        padding: 1.5em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main{
+        width: 65%;
+        padding: 1.5em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 991px) {
+    main{
+        width: 45%;
+        padding: 1.5em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main{
+        width: 35%;
+        padding: 1.5em;
+    }
+}
+@media only screen and (min-width: 1439px) {
+    main{
+        width: 30%;
+        padding: 1.5em;
+    }
+}
+@media only screen and (min-width: 1679px) {
+    main{
+        width: 25%;
+        padding: 1.5em;
+    }
+}
